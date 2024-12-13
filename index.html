@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-wrapper">
+      <main class="container">
+        <h1>Pokedex App</h1>
+        <img src="pokeball.png" alt="Pokeball" id="pokeball" />
+
+        <article class="pokemon-card">
+          <p id="pokemon">Gotta catch 'em all!</p>
+          <p id="type"></p>
+        </article>
+        <div class="button-container">
+          <button type="button" id="randoMon">Randomón</button>
+          <button type="button" id="music">Music</button>
+        </div>
+        <div class="search-container">
+          <input type="search" id="search" placeholder="Type a pokemon name...">
+          <button type="button" id="pokeSearch">Search</button>
+        </div>
+      </main>
+    </div>
+    <script src="pokedex.js"></script>
+  </body>
+</html>
