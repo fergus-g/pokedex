@@ -9,9 +9,14 @@
   <body>
     <div class="background-wrapper">
       <main class="container">
-        <h1>Pokedex App</h1>
-        <img src="pokeball.png" alt="Pokeball" id="pokeball" />
-
+        <div class="main-screen">
+          <img
+            src="International_Pokémon_logo.svg.png"
+            alt="Pokemon-logo"
+            id="pokemon-logo"
+          />
+          <img id="pikachu" src="pikachu.gif" alt="Pikachu" />
+        </div>
         <article class="pokemon-card">
           <p id="pokemon">Gotta catch 'em all!</p>
           <p id="type"></p>
@@ -21,7 +26,11 @@
           <button type="button" id="music">Music</button>
         </div>
         <div class="search-container">
-          <input type="search" id="search" placeholder="Type a pokemon name...">
+          <input
+            type="search"
+            id="search"
+            placeholder="Type a pokemon name..."
+          />
           <button type="button" id="pokeSearch">Search</button>
         </div>
       </main>

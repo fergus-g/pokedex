@@ -5,6 +5,7 @@ const musicButtonHandler = document.getElementById("music");
 const searchInput = document.getElementById("search");
 const searchButton = document.getElementById("pokeSearch");
 const audio = new Audio("pokemon-theme.mp3");
+const picaGif = document.getElementById("pikachu");
 let pokeNumber = 0;
 let query = "";
 let pokeCry = new Audio();
@@ -32,6 +33,7 @@ function playCry() {
 
 function getPokemonHandler() {
   query = Math.floor(Math.random() * 1026);
+  picaGif.remove();
   getPokemon(query);
 }
 
@@ -77,9 +79,9 @@ async function getPokemon(query) {
 }
 
 function showPokemon(pokemonData, speciesData) {
-  const img = document.getElementById("pokeball");
+  const img = document.getElementById("pokemon-logo");
   img.src = pokemonData.sprites.front_default;
-  img.style.width = "25%";
+  img.style.width = "40%";
 
   pokeNumber = pokemonData.id;
 
